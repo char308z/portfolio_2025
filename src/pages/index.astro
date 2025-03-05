@@ -1,5 +1,6 @@
 ---
 import Case from "../components/Case.astro";
+import Floor from "../components/Floor.astro";
 
 import Layout from "../layouts/Layout.astro";
 
@@ -8,11 +9,33 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <h1 class="text-3xl font-bold underline absolute top-1/2 pl-44">Hello!</h1>
-  <img class="aspect-video" src="./images/a.jpg" alt="" />
-
-  <div class="w-8 h-8 bg-primary"></div>
-  <div class="w-8 h-8 bg-secondary"></div>
+  <div class="px-32 pt-128">
+    <section
+      id="roof"
+      class="w-full bg-cover bg-center object-cover bg-no-repeat"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="inherit"
+        height="inherit"
+        viewBox="0 0 954 400"
+        fill="none"
+      >
+        <path
+          d="M477 0C954 0 954 400 954 400H0C0 400 4.07756e-05 0 477 0Z"
+          fill="#2D3577"></path>
+      </svg>
+    </section>
+    <main id="floors" class="bg-indigo-100 px-5 flex flex-col gap-5">
+      <Floor floorStyle="stairsL" bg1="room2" bg2="room1" />
+      <Floor floorStyle="fullFloor" bg1="room3" bg2="room3" />
+      <Floor floorStyle="twoRooms" bg1="room4" bg2="room5" />
+      <Floor floorStyle="stairsR" bg1="room1" bg2="room2" />
+      <Floor floorStyle="fullFloor" bg1="room1" bg2="room2" />
+      <Floor floorStyle="stairsR" bg1="room1" bg2="room2" />
+    </main>
+    <img src="./images/room1.jpg" alt="" />
+  </div>
   <!-- <Case titel="Hell yeah" img="https://picsum.photos/id/237/175/175" />
   <Case titel="Oh yeah bby" img="https://picsum.photos/id/123/175/175" />
   <Case titel="Yeeeehaa honey" img="https://picsum.photos/id/111/175/175" /> -->

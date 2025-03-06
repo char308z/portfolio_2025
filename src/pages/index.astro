@@ -11,7 +11,7 @@ import Layout from "../layouts/Layout.astro";
   <div class="px-32 pt-128 pb-64 flex flex-col items-center">
     <section
       id="roof"
-      class="w-full max-w-280 bg-cover bg-center object-cover bg-no-repeat"
+      class="w-full 2xl:max-w-260 md:max-w-200 bg-cover bg-center object-cover bg-no-repeat"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -27,14 +27,14 @@ import Layout from "../layouts/Layout.astro";
     </section>
     <main
       id="floors"
-      class="bg-indigo-100 px-5 w-full max-w-280 grid gap-5 py-5"
+      class="bg-indigo-100 px-5 w-full md:max-w-200 2xl:max-w-260 grid gap-5 py-5"
     >
       <Floor floorStyle="stairsR" bg1="room1" bg2="room2" />
       <Floor floorStyle="fullFloor" bg1="room4" bg2="room2" />
       <Floor floorStyle="twoRooms" bg1="room3" bg2="room5" />
       <Floor floorStyle="stairsR" bg1="room1" bg2="room2" />
       <Floor floorStyle="fullFloor" bg1="room3" bg2="room2" />
-      <Floor floorStyle="stairsR" bg1="room1" bg2="room2" />
+      <Floor floorStyle="stairsL" bg1="room2" bg2="room1" />
     </main>
   </div>
 </Layout>

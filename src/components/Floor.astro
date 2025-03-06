@@ -2,16 +2,16 @@
 const { floorStyle, bg1, bg2 } = Astro.props;
 ---
 
-<section class="">
+<section>
   <div id="room" class="w-full h-114 bg-indigo-100 grid grid-cols-4 gap-5">
     <div
       id="room1"
-      class=`${floorStyle} w-full h-full  bg-[url(./images/${bg1}.jpg)]  bg-cover bg-center object-cover bg-no-repeat`
+      class=`${floorStyle} w-full h-full  bg-[url(./images/${bg1}.jpg)] bg-cover bg-center object-cover bg-no-repeat`
     >
     </div>
     <div
       id="room2"
-      class=`${floorStyle} w-full h-full bg-[url(./images/${bg2}.jpg)]  bg-cover bg-center object-cover  bg-no-repeat`
+      class=`${floorStyle} w-full h-full bg-[url(./images/${bg2}.jpg)] bg-cover bg-center object-cover  bg-no-repeat`
     >
     </div>
   </div>
@@ -22,9 +22,9 @@ const { floorStyle, bg1, bg2 } = Astro.props;
     grid-column: span 4;
   }
 
-  /* #room2.fullFloor {
+  #room2.fullFloor {
     display: none;
-  } */
+  }
 
   #room1.twoRooms {
     grid-column: span 2;

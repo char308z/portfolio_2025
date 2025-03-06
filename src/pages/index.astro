@@ -1,5 +1,4 @@
 ---
-import Case from "../components/Case.astro";
 import Floor from "../components/Floor.astro";
 
 import Layout from "../layouts/Layout.astro";
@@ -9,10 +8,10 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div class="px-32 pt-128">
+  <div class="px-32 pt-128 pb-64 flex flex-col items-center">
     <section
       id="roof"
-      class="w-full bg-cover bg-center object-cover bg-no-repeat"
+      class="w-full max-w-280 bg-cover bg-center object-cover bg-no-repeat"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -26,17 +25,16 @@ import Layout from "../layouts/Layout.astro";
           fill="#2D3577"></path>
       </svg>
     </section>
-    <main id="floors" class="bg-indigo-100 px-5 flex flex-col gap-5">
-      <Floor floorStyle="stairsL" bg1="room2" bg2="room1" />
-      <Floor floorStyle="fullFloor" bg1="room3" bg2="room3" />
-      <Floor floorStyle="twoRooms" bg1="room4" bg2="room5" />
+    <main
+      id="floors"
+      class="bg-indigo-100 px-5 w-full max-w-280 grid gap-5 py-5"
+    >
       <Floor floorStyle="stairsR" bg1="room1" bg2="room2" />
-      <Floor floorStyle="fullFloor" bg1="room1" bg2="room2" />
+      <Floor floorStyle="fullFloor" bg1="room4" bg2="room2" />
+      <Floor floorStyle="twoRooms" bg1="room3" bg2="room5" />
+      <Floor floorStyle="stairsR" bg1="room1" bg2="room2" />
+      <Floor floorStyle="fullFloor" bg1="room3" bg2="room2" />
       <Floor floorStyle="stairsR" bg1="room1" bg2="room2" />
     </main>
-    <img src="./images/room1.jpg" alt="" />
   </div>
-  <!-- <Case titel="Hell yeah" img="https://picsum.photos/id/237/175/175" />
-  <Case titel="Oh yeah bby" img="https://picsum.photos/id/123/175/175" />
-  <Case titel="Yeeeehaa honey" img="https://picsum.photos/id/111/175/175" /> -->
 </Layout>

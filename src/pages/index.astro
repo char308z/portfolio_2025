@@ -8,12 +8,15 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div class="px-32 pt-128 pb-64 flex flex-col items-center">
+  <div
+    class="px-4.5 md:px-32 xl:px-64 2xl:px-86 pt-128 pb-64 flex flex-col items-center"
+  >
     <section
       id="roof"
-      class="w-full 2xl:max-w-260 md:max-w-200 bg-cover bg-center object-cover bg-no-repeat"
+      class="w-full bg-cover bg-center object-cover bg-no-repeat"
     >
       <svg
+        id="roof"
         class="fill-indigo-800"
         xmlns="http://www.w3.org/2000/svg"
         width="inherit"
@@ -21,20 +24,22 @@ import Layout from "../layouts/Layout.astro";
         viewBox="0 0 954 400"
         fill="none"
       >
-        <path d="M477 0C954 0 954 400 954 400H0C0 400 4.07756e-05 0 477 0Z"
-        ></path>
+        <path d="M477 0L954 400H0L477 0Z"></path>
       </svg>
+
+      <main
+        id="floors"
+        class="bg-indigo-100 px-2.5 lg:px-5 w-full grid gap-2.5 lg:gap-5 py-2.5 lg:py-5"
+      >
+        <Floor floorStyle="stairsR" bg1="room1" bg2="room2" />
+        <Floor floorStyle="fullFloor" bg1="room4" bg2="room2" />
+        <Floor floorStyle="twoRooms" bg1="room3" bg2="room5" />
+        <Floor floorStyle="stairsR" bg1="room1" bg2="room2" />
+        <Floor floorStyle="fullFloor" bg1="room3" bg2="room2" />
+        <Floor floorStyle="stairsL" bg1="room2" bg2="room1" />
+      </main>
     </section>
-    <main
-      id="floors"
-      class="bg-indigo-100 px-5 w-full md:max-w-200 2xl:max-w-260 grid gap-5 py-5"
-    >
-      <Floor floorStyle="stairsR" bg1="room1" bg2="room2" />
-      <Floor floorStyle="fullFloor" bg1="room4" bg2="room2" />
-      <Floor floorStyle="twoRooms" bg1="room3" bg2="room5" />
-      <Floor floorStyle="stairsR" bg1="room1" bg2="room2" />
-      <Floor floorStyle="fullFloor" bg1="room3" bg2="room2" />
-      <Floor floorStyle="stairsL" bg1="room2" bg2="room1" />
-    </main>
   </div>
 </Layout>
+
+<!-- 2xl:max-w-260 md:max-w-200 -->

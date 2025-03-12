@@ -3,10 +3,7 @@ const { floorStyle, bg1, bg2 } = Astro.props;
 ---
 
 <section>
-  <div
-    id="rooms"
-    class="w-full h-full bg-indigo-100 grid lg:grid-cols-18 gap-2.5 lg:gap-5"
-  >
+  <div id="rooms" class="w-full h-full grid lg:grid-cols-18 gap-2.5 lg:gap-5">
     <div id="room1" class=`${floorStyle}  overflow-hidden`>
       <img
         src=`./images/${bg1}.svg`

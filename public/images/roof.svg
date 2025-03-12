@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1274.16">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #cc5050;
+      }
+
+      .cls-3 {
+        fill: #d66b6b;
+      }
+
+      .cls-4 {
+        fill: #c33;
+      }
+
+      .cls-5 {
+        fill: #f5c1c1;
+      }
+
+      .cls-6 {
+        mix-blend-mode: darken;
+        opacity: .2;
+      }
+    </style>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_1">
+      <g>
+        <polygon class="cls-3" points="1773.34 2.11 146.66 2.11 0 1274.16 1920 1274.16 1773.34 2.11"/>
+        <g>
+          <g>
+            <polygon class="cls-4" points="960 205.82 505.58 634.25 1414.42 634.25 960 205.82"/>
+            <polygon class="cls-5" points="960 294.84 600 634.25 1320 634.25 960 294.84"/>
+          </g>
+          <rect class="cls-5" x="600" y="634.25" width="720" height="639.92"/>
+        </g>
+        <g>
+          <rect class="cls-3" x="770.51" y="569.63" width="378.97" height="509.61"/>
+          <g>
+            <g>
+              <g>
+                <rect class="cls-2" x="802.15" y="593.99" width="137.34" height="183.09"/>
+                <path class="cls-6" d="M802.15,777.08s23.12-183.09,137.34-183.09-137.34,0-137.34,0v183.09Z"/>
+              </g>
+              <g>
+                <rect class="cls-2" x="980.5" y="593.99" width="137.34" height="183.09"/>
+                <path class="cls-6" d="M980.5,777.08s23.12-183.09,137.34-183.09-137.34,0-137.34,0v183.09Z"/>
+              </g>
+            </g>
+            <g>
+              <g>
+                <rect class="cls-2" x="979.51" y="807.01" width="137.34" height="246.88"/>
+                <path class="cls-6" d="M979.51,990.1s23.12-183.09,137.34-183.09-137.34,0-137.34,0v183.09Z"/>
+              </g>
+              <g>
+                <rect class="cls-2" x="802.15" y="808" width="137.34" height="246.88"/>
+                <path class="cls-6" d="M802.15,991.09s23.12-183.09,137.34-183.09-137.34,0-137.34,0v183.09Z"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

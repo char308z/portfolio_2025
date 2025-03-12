@@ -4,21 +4,21 @@ const { floorStyle, bg1, bg2 } = Astro.props;
 
 <section>
   <div
-    id="room"
-    class="w-full h-full bg-indigo-100 grid lg:grid-cols-4 gap-2.5 lg:gap-5"
+    id="rooms"
+    class="w-full h-full bg-indigo-100 grid lg:grid-cols-18 gap-2.5 lg:gap-5"
   >
     <div id="room1" class=`${floorStyle}  overflow-hidden`>
       <img
-        src=`./images/room1.svg`
+        src=`./images/${bg1}.svg`
         alt=""
-        class="object-cover w-full h-64 lg:h-114 xl:h-132"
+        class="object-cover w-full h-full"
       />
     </div>
     <div id="room2" class=`${floorStyle} `>
       <img
-        src=`./images/room2.svg`
+        src=`./images/${bg2}.svg`
         alt=""
-        class="object-cover w-full h-64 lg:h-114 xl:h-132"
+        class="object-cover w-full h-full"
       />
     </div>
   </div>
@@ -30,31 +30,32 @@ const { floorStyle, bg1, bg2 } = Astro.props;
   }
   @media (width >= 1024px) {
     #room1.fullFloor {
-      grid-column: span 4;
+      grid-column: span 18;
+      aspect-ratio: 18/9;
     }
 
     #room1.twoRooms {
-      grid-column: span 2;
+      grid-column: span 9;
     }
 
     #room2.twoRooms {
-      grid-column: span 2;
+      grid-column: span 9;
     }
 
     #room1.stairsL {
-      grid-column: span 1;
+      grid-column: span 6;
     }
 
     #room2.stairsL {
-      grid-column: span 3;
+      grid-column: span 12;
     }
 
     #room1.stairsR {
-      grid-column: span 3;
+      grid-column: span 12;
     }
 
     #room2.stairsR {
-      grid-column: span 1;
+      grid-column: span 6;
     }
   }
 </style>

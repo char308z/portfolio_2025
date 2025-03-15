@@ -1,7 +1,10 @@
 ---
 import "../styles/global.css";
-import Header from "../components/Header.astro";
+import cases from "../cases.json";
+
 import HeaderAside from "../components/HeaderAside.astro";
+
+const {pageTitle} = Astro.props;
 ---
 
 <!doctype html>
@@ -13,7 +16,7 @@ import HeaderAside from "../components/HeaderAside.astro";
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="generator" content={Astro.generator} />
 
-    <title>Charlotte Franciska Portfolio</title>
+    <title>{pageTitle}</title>
   </head>
   <body class="bg-amber-50 relative grid grid-cols-6">
     <HeaderAside class="col-span-1" />

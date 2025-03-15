@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
+import cases from "../cases.json"
+import CaseLink from "../components/CaseLink.astro"
 const {title, imgFolder, link, bgColor} = Astro.props; 
 ---
 
@@ -10,12 +11,18 @@ const {title, imgFolder, link, bgColor} = Astro.props;
 
     <div id="casesTitles" class="col-span-2 p-4 flex flex-col justify-end">
         <h1>Projects</h1>
-        <a href={link}>
-          <h2>{title}test title</h2>
-        </a>
+        <ul>
+          {
+cases.map((project) => (
+  <CaseLink 
+  title={project.title} slug={project.slug}></CaseLink>
+))
+          }
+     
+       </ul>
     </div>
-    <div id="showCase" class=`col-span-3  w-full h-screen bg-[${bgColor}] bg-amber-200`>
-      <img src=`./images/${imgFolder}/room.svg` alt="">
+    <div id="showCase" class=`col-span-3  w-full h-screen bg-[${bgColor}] bg-amber-200 flex flex-col justify-center`>
+      <img src=`./images/twinPeaks/room.svg` alt="" class="w-full aspect-18/9 bg-white ">
     </div>
 
   </main>

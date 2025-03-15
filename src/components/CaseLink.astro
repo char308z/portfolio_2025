@@ -1,0 +1,9 @@
+---
+const { title, slug } = Astro.props;
+---
+
+<li class="caseBullet">
+  <a class="text-indigo-700 font-medium text-lg 2xl:text-5xl" href={`/${slug}`}
+    >{title}</a
+  >
+</li>

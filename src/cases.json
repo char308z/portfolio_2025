@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "twin-peaks-the-game",
+    "title": "Twin Peaks - The Game",
+    "subTitle": "",
+    "year": "",
+    "description": "",
+    "folder": "twinPeaks",
+    "skills": ["skill1", "skill2", "skill3", "skill4"]
+  },
+  {
+    "slug": "filmstriben",
+    "title": "Filmstriben",
+    "subTitle": "Graduation project in multimedia design from KEA",
+    "year": "2023",
+    "description": "Redesign of the Danish libraries' national digital film service",
+    "folder": "filmstriben",
+    "skills": ["skill1", "skill2", "skill3", "skill4"]
+  }
+]

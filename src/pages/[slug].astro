@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+import cases from "../cases.json";
+
+export async function getStaticPaths() {
+  return cases.map((project) => {
+    return {
+      params: { slug: project.slug },
+      props: { myCase: project },
+    };
+  });
+}
+const { myCase } = Astro.props;
+
+
+---
+
+
+
+<Layout title={`${myCase.title}`}>
+    <h1>{myCase.title}</h1>
+    <h2>{myCase.subTitle}</h2>
+    <p>{myCase.description}</p>
+    <ul>
+        {
+            myCase.skills.map((skill) => (
+                    <li>{skill}</li>
+            ))
+        }
+    </ul>
+</Layout>

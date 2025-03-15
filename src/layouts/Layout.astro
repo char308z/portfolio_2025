@@ -15,11 +15,11 @@ import HeaderAside from "../components/HeaderAside.astro";
 
     <title>Charlotte Franciska Portfolio</title>
   </head>
-  <body class="bg-amber-50 relative justify-items-center">
-    <!-- <Header /> -->
-
-    <HeaderAside />
+  <body class="bg-amber-50 relative grid grid-cols-6">
+    <HeaderAside class="col-span-1" />
+    <main class="col-span-full md:col-span-5  md:col-start-2 ">
     <slot />
+    </main>
   </body>
 </html>
 <style>

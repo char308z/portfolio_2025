@@ -1,7 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const {title, imgFolder, link, bgColor} = Astro.props; 
 ---
 
 <Layout>
-  <h1>wooooork</h1>
+
+  <main class="grid grid-cols-5  ">
+
+    <div id="casesTitles" class="col-span-2 p-4 flex flex-col justify-end">
+        <h1>Projects</h1>
+        <a href={link}>
+          <h2>{title}test title</h2>
+        </a>
+    </div>
+    <div id="showCase" class=`col-span-3  w-full h-screen bg-[${bgColor}] bg-amber-200`>
+      <img src=`./images/${imgFolder}/room.svg` alt="">
+    </div>
+
+  </main>
 </Layout>

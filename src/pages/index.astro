@@ -9,25 +9,14 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <div
-    class="px-4.5 md:px-32 xl:px-64 2xl:px-86 pt-128 pb-64 flex flex-col items-center"
+    class=" px-4.5 md:px-14 lg:px-28 pt-28 2xl:pt-128 pb-64 flex flex-col items-center"
   >
     <section
-      id="roof"
+      id="wholeHouse"
       class="w-full bg-cover bg-center object-cover bg-no-repeat"
     >
-      <!-- <svg
-        id="roof"
-        class="fill-indigo-800"
-        xmlns="http://www.w3.org/2000/svg"
-        width="inherit"
-        height="inherit"
-        viewBox="0 0 954 400"
-        fill="none"
-      >
-        <path d="M477 0L954 400H0L477 0Z"></path>
-      </svg> -->
       <img src="./images/roof2.svg" alt="" />
-      <main
+      <section
         id="floors"
         class="bg-indigo-100 px-2.5 lg:px-5 w-full grid gap-2.5 lg:gap-5 py-2.5 lg:py-5"
       >
@@ -37,7 +26,7 @@ import Layout from "../layouts/Layout.astro";
         <Floor floorStyle="stairsR" bg1="roomL" bg2="stairR" />
         <Floor floorStyle="fullFloor" bg1="fullF" bg2="room2" />
         <Floor floorStyle="stairsL" bg1="stairL" bg2="roomR" />
-      </main>
+      </section>
     </section>
   </div>
 </Layout>

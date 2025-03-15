@@ -3,9 +3,6 @@
 @theme {
   --color-primary: oklch(47.18% 0.2564 274.76);
   --color-secondary: oklch(80.15% 0.099 264.93);
-}
-
-h1,
-p {
-  color: var(--color-primary);
+  --color-twinPeaks: oklch(70% 0.1233 19.59);
+  --font-mono: "Courier new", "sans-serif";
 }

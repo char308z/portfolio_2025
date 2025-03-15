@@ -6,15 +6,58 @@
     "year": "",
     "description": "",
     "folder": "twinPeaks",
-    "skills": ["skill1", "skill2", "skill3", "skill4"]
+    "skills": ["skill1", "skill2", "skill3", "skill4"],
+    "color": "#e17d7f",
+    "textColor": "#921F1F"
   },
   {
     "slug": "filmstriben",
     "title": "Filmstriben",
     "subTitle": "Graduation project in multimedia design from KEA",
     "year": "2023",
-    "description": "Redesign of the Danish libraries' national digital film service",
+    "description": "Redesign of the Danish libraries' national digital film service.",
     "folder": "filmstriben",
-    "skills": ["skill1", "skill2", "skill3", "skill4"]
+    "skills": ["skill1", "skill2", "skill3", "skill4", "skill4"],
+    "color": "oklch(70% 0.1159 360)"
+  },
+  {
+    "slug": "slowmotion",
+    "title": "Slowmotion",
+    "subTitle": "",
+    "year": "",
+    "description": "",
+    "folder": "slowmotion",
+    "skills": ["skill1", "skill2", "skill3", "skill4"],
+    "color": "oklch(70% 0.1159 360)"
+  },
+  {
+    "slug": "pi-day",
+    "title": "Pi-day",
+    "subTitle": "Graduation project in multimedia design from KEA",
+    "year": "2025",
+    "description": "Redesign of the Danish libraries' national digital film service",
+    "folder": "piDag",
+    "skills": ["skill1", "skill2", "skill3", "skill4"],
+    "color": "oklch(70% 0.1159 360)"
+  },
+  {
+    "slug": "no-figs-given",
+    "title": "No figs given",
+    "subTitle": "Graduation project in multimedia design from KEA",
+    "year": "2025",
+    "description": "Redesign of the Danish libraries' national digital film service",
+    "folder": "figs",
+    "skills": ["skill1", "skill2", "skill3", "skill4"],
+    "color": "oklch(70% 0.1159 360)"
+  },
+  {
+    "slug": "a-study-of-coffe",
+    "title": "A study of coffe",
+    "subTitle": "Graduation project in multimedia design from KEA",
+    "year": "2020",
+    "description": "Redesign of the Danish libraries' national digital film service",
+    "folder": "kaffeSysler",
+    "skills": ["skill1", "skill2", "skill3", "skill4"],
+    "color": "oklch(70% 0.1159 360)"
   }
 ]

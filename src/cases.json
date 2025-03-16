@@ -8,7 +8,21 @@
     "folder": "twinPeaks",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
     "color": "#e17d7f",
-    "textColor": "#921F1F"
+    "textColor": "#921F1F",
+    "gallery": [
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }
+    ]
   },
   {
     "slug": "filmstriben",
@@ -18,7 +32,21 @@
     "description": "Redesign of the Danish libraries' national digital film service.",
     "folder": "filmstriben",
     "skills": ["skill1", "skill2", "skill3", "skill4", "skill4"],
-    "color": "oklch(70% 0.1159 360)"
+    "color": "oklch(70% 0.1159 360)",
+    "gallery": [
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }
+    ]
   },
   {
     "slug": "slowmotion",
@@ -28,7 +56,21 @@
     "description": "",
     "folder": "slowmotion",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
-    "color": "oklch(70% 0.1159 360)"
+    "color": "oklch(70% 0.1159 360)",
+    "gallery": [
+      {
+        "src": "a.jpg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }
+    ]
   },
   {
     "slug": "pi-day",
@@ -38,7 +80,21 @@
     "description": "Redesign of the Danish libraries' national digital film service",
     "folder": "piDag",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
-    "color": "oklch(70% 0.1159 360)"
+    "color": "oklch(70% 0.1159 360)",
+    "gallery": [
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }
+    ]
   },
   {
     "slug": "no-figs-given",
@@ -48,7 +104,21 @@
     "description": "Redesign of the Danish libraries' national digital film service",
     "folder": "figs",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
-    "color": "oklch(70% 0.1159 360)"
+    "color": "oklch(70% 0.1159 360)",
+    "gallery": [
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }
+    ]
   },
   {
     "slug": "a-study-of-coffe",
@@ -58,6 +128,20 @@
     "description": "Redesign of the Danish libraries' national digital film service",
     "folder": "kaffeSysler",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
-    "color": "oklch(70% 0.1159 360)"
+    "color": "oklch(70% 0.1159 360)",
+    "gallery": [
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }
+    ]
   }
 ]

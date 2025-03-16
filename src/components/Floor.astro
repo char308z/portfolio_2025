@@ -1,15 +1,17 @@
 ---
-const { floorStyle, bg1, bg2 } = Astro.props;
+const { floorStyle, bg1, bg2, slug} = Astro.props;
 ---
 
 <section>
   <div id="rooms" class="w-full h-full grid lg:grid-cols-18 gap-2.5 lg:gap-5">
     <div id="room1" class=`${floorStyle}  overflow-hidden`>
+      <a href={slug}>
       <img
         src=`./images/${bg1}.svg`
         alt=""
         class="object-cover w-full h-full"
       />
+    </a>
     </div>
     <div id="room2" class=`${floorStyle} `>
       <img

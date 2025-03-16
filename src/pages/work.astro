@@ -7,16 +7,16 @@ const {title, imgFolder, link, bgColor} = Astro.props;
 
 <Layout>
 
-  <main class="grid grid-cols-5  ">
+  <main class="grid grid-cols-5">
 
     <div id="casesTitles" class="col-span-2 p-4 flex flex-col justify-end">
         <h1 class="font-mono  font-bold text-indigo-700/75">Projects</h1>
         <ul class=" grid gap-4.5">
           {
-cases.map((project) => (
-  <CaseLink 
-  title={project.title} slug={project.slug}></CaseLink>
-))
+            cases.map((project) => (
+               <CaseLink 
+                  title={project.title} slug={project.slug}/>
+                ))
           }
      
        </ul>

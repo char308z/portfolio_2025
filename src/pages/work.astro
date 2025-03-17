@@ -1,29 +1,108 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import cases from "../cases.json"
-import CaseLink from "../components/CaseLink.astro"
-const {title, imgFolder, link, bgColor} = Astro.props; 
+import cases from "../cases.json";
+import CaseLink from "../components/CaseLink.astro";
+import GridWrapper from "../layouts/GridWrapper.astro";
+const { title, imgFolder, link, bgColor, txtColor } = Astro.props;
 ---
 
-<Layout>
+<GridWrapper>
+  <div
+    id="casesTitles"
+    class="col-span-2 p-4 lg:p-11 flex flex-col justify-between gap-6"
+  >
+    <h1 class="font-hoe text-black/75 tracking-widest text-2xl">Projects</h1>
+    <ul class="grid gap-4.5 xl:gap-10">
+      {
+        cases.map((project) => (
+          <CaseLink
+            title={project.title}
+            slug={project.slug}
+            txtColor={project.textColor}
+            bgColor={project.bgColor}
+            imgPath={`./images/${project.folder}/${project.room}`}
+          />
+        ))
+      }
+    </ul>
+  </div>
+  <div
+    id="showCase"
+    class="col-span-3 w-full bg-secondary h-screen flex flex-col justify-center items-center"
+  >
+    <img
+      src="./images/a.jpg"
+      alt=""
+      class="w-3/4 aspect-18/9 object-cover"
+      id="showcaseImage"
+    />
+  </div>
+</GridWrapper>
+<script is:inline lang="ts">
+  // Wait for the DOM to be fully loaded
+  document.addEventListener("DOMContentLoaded", () => {
+    // Get all CaseLink elements
+    const caseLinks = document.querySelectorAll(".case-link"); // Add this class to your CaseLink component
+    const showcaseDiv = document.getElementById("showCase");
+    const showcaseImage = document.getElementById("showcaseImage");
 
-  <main class="grid grid-cols-5">
+    const logo = document.getElementById("logo");
+    const navLinks = document.querySelectorAll("a.navPunkt");
 
-    <div id="casesTitles" class="col-span-2 p-4 flex flex-col justify-end">
-        <h1 class="font-mono  font-bold text-indigo-700/75">Projects</h1>
-        <ul class=" grid gap-4.5">
-          {
-            cases.map((project) => (
-               <CaseLink 
-                  title={project.title} slug={project.slug}/>
-                ))
-          }
-     
-       </ul>
-    </div>
-    <div id="showCase" class=`col-span-3  w-full h-screen bg-[#e17d7f]  flex flex-col justify-center items-center`>
-      <img src=`./images/twinPeaks/room.svg` alt="" class="w-3/4 aspect-18/9 ">
-    </div>
+    // Default values (from your first case)
+    const defaultBgColor = "#f2f4ff";
+    const defaultImgPath = "./images/a.jpg";
+    const defaultTxtColor = "#1d1d1d";
+    const defaultLogoColor = "oklch(45.7% 0.24 277.023)";
+    const defaultNavColor = "text-primary"; // Store the default navigation text color class
+    // Add event listeners to each CaseLink
+    caseLinks.forEach((link) => {
+      link.addEventListener("mouseover", () => {
+        const bgColor = link.getAttribute("data-bg-color");
+        const imgPath = link.getAttribute("data-img-path");
+        const txtLink = link.getAttribute("data-text-color");
 
-  </main>
-</Layout>
+        link.style.color = txtLink;
+
+        logo.style.fill = txtLink;
+
+        // navPunk.style.color = txtLink;
+
+        // Update background color
+        showcaseDiv.style.backgroundColor = bgColor;
+
+        // Update image source
+        showcaseImage.src = imgPath;
+
+        // Update all navigation links text color
+        if (txtLink) {
+          navLinks.forEach((navLink) => {
+            // Remove the default text color class
+            navLink.classList.remove("text-primary");
+
+            // Add the new text color as an inline style
+            navLink.style.color = txtLink;
+          });
+        }
+
+        // Optional: Reset to default when mouse leaves all links
+        link.addEventListener("mouseout", () => {
+          // Uncomment if you want to reset to default when not hovering any case
+          showcaseDiv.style.backgroundColor = defaultBgColor;
+          showcaseImage.src = defaultImgPath;
+          link.style.color = defaultTxtColor;
+          logo.style.fill = defaultLogoColor;
+
+          // Reset navigation links text color to default
+          navLinks.forEach((navLink) => {
+            // Remove any inline style
+            navLink.style.color = "";
+
+            // Add back the default text color class
+            navLink.classList.add("text-primary");
+          });
+        });
+      });
+    });
+  });
+</script>

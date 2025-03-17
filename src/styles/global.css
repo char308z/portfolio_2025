@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: oklch(47.18% 0.2564 274.76);
-  --color-secondary: oklch(80.15% 0.099 264.93);
-  --color-twinPeaks: oklch(70% 0.1233 19.59);
-  --font-mono: "Courier new", "sans-serif";
+  --color-primary: oklch(45.7% 0.24 277.023);
+  --color-secondary: oklch(96.88% 0.0148 277.85);
+  --color-bg: oklch(99.75% 0.0017 67.8);
+  --color-black: oklch(23% 0 280.59);
+
+  --font-filo: "filosofia", serif;
+  --font-hoe: "Hoefler Text", serif;
+}
+
+p {
+  max-width: 65ch;
 }

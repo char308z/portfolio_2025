@@ -1,11 +1,76 @@
 ---
-import Nav_link from "./Nav_link.astro";
+
 ---
 
-<nav class="">
-  <ul class="flex flex-col gap-4">
-    <Nav_link titel="Work" link="/work" />
-    <Nav_link titel="About" link="/about" />
-    <Nav_link titel="Contact" link="/contact" />
-  </ul>
+<nav class="flex flex-col gap-4">
+  <a class="navPunkt text-primary font-medium text-lg 2xl:text-xl" href="/work"
+    >Work</a
+  >
+  <a class="navPunkt text-primary font-medium text-lg 2xl:text-xl" href="/about"
+    >About</a
+  >
+  <a
+    class="navPunkt text-primary font-medium text-lg 2xl:text-xl"
+    href="/contact">Contact</a
+  >
 </nav>
+
+<style>
+  .navPunkt {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  .navPunkt.active {
+    opacity: 1;
+  }
+</style>
+
+<script is:inline lang="ts">
+  document.addEventListener("DOMContentLoaded", () => {
+    const navLinks = document.querySelectorAll("nav a");
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach((link) => {
+      if (
+        link.getAttribute("href") === currentPath ||
+        (currentPath === "/" && link.getAttribute("href") === "/work")
+      ) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+<!-- <nav class="flex flex-col gap-4">
+  <a class=`navPunkt text-primary font-medium text-lg 2xl:text-xl` href="/work"
+    >Work</a
+  ><a
+    class=`navPunkt text-primary font-medium text-lg 2xl:text-xl`
+    href="/about">About</a
+  ><a
+    class=`navPunkt text-primary font-medium text-lg 2xl:text-xl`
+    href="/contact">Contact</a
+  >
+</nav>
+
+<script>
+  const navLinks = document.querySelectorAll("nav a");
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+
+    // `slice` here to remove the first `/` in pathname
+    const currentPath = window.location.pathname.slice("1");
+
+    // `link.href` returns a whole url, such as: "https://somedomain.com/posts" and we only need the last part
+    const hrefArray = link.href.split("/");
+    const thisPath = hrefArray[hrefArray.length - 1];
+
+    if (currentPath === thisPath) {
+      link.classList.add("active");
+    }
+  });
+</script> -->

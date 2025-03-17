@@ -4,24 +4,23 @@ import cases from "../cases.json";
 
 import HeaderAside from "../components/HeaderAside.astro";
 
-const {pageTitle} = Astro.props;
+const { pageTitle } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="preload" href="./images/room1.jpg" as="image" />
+    <link rel="stylesheet" href="https://use.typekit.net/bnz3icx.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="generator" content={Astro.generator} />
-
     <title>{pageTitle}</title>
   </head>
-  <body class="bg-amber-50 relative grid grid-cols-6">
+  <body class="bg-bg relative grid grid-cols-6">
     <HeaderAside class="col-span-1" />
-    <main class="col-span-full md:col-span-5  md:col-start-2 ">
-    <slot />
+    <main class="col-span-full md:col-span-5 md:col-start-2">
+      <slot />
     </main>
   </body>
 </html>

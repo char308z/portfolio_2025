@@ -1,49 +1,51 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
 
 import cases from "../cases.json";
-
 
 export async function getStaticPaths() {
   return cases.map((project) => {
     return {
-      params: { slug: project.slug, folder:project.folder }, 
+      params: { slug: project.slug, folder: project.folder },
       props: { myCase: project },
     };
   });
 }
 
-
 const { myCase } = Astro.props;
 ---
 
-
-
 <Layout title={`${myCase.title}`}>
-     <main class="grid grid-cols-5 ">
-
-    
-   
-  <div id="casesTitles" class="col-span-2 p-4 flex flex-col justify-end">
+  <main class="grid grid-cols-5">
+    <div id="casesTitles" class="col-span-2 p-4 flex flex-col justify-end">
       <h1 class=`font-bold text-[${myCase.textColor}]`>{myCase.title}</h1>
-    <h2 class=`font-mono max-w-prose font-bold text-[${myCase.textColor}] opacity-75`>{myCase.subTitle}</h2>
-    <p class="max-w-prose text-pretty">{myCase.description}</p>
-    <ul class="">
+      <h2
+        class=`max-w-prose text-md xl:text-xl font-hoe tracking-widest text-[${myCase.textColor}] opacity-75`
+      >
+        {myCase.subTitle}
+      </h2>
+      <p class="max-w-prose text-pretty">{myCase.description}</p>
+      <ul class="">
         {
-            myCase.skills.map((skill) => (
-                    <li class="list-inside list-disc">{skill}</li>
-            ))
+          myCase.skills.map((skill) => (
+            <li class="list-inside list-disc">{skill}</li>
+          ))
         }
-    </ul>  
-  </div>
-     <div id="showCase" class=`col-span-3  w-full h-screen overflow-scroll flex flex-col  gap-4.5`>
-     {  
-     myCase.gallery.map((caseFoto) => (
-        <img src={`../images/${myCase.folder}/${caseFoto.src}`} alt={caseFoto.alt} class="w-full h-fit object-cover"/>
-      ))
-     } 
-
+      </ul>
     </div>
-
-    </main>
+    <div
+      id="showCase"
+      class=`col-span-3  w-full h-screen overflow-scroll flex flex-col  gap-4.5`
+    >
+      {
+        myCase.gallery.map((caseFoto) => (
+          <img
+            src={`../images/${myCase.folder}/${caseFoto.src}`}
+            alt={caseFoto.alt}
+            class="w-full h-fit object-cover"
+          />
+        ))
+      }
+    </div>
+  </main>
 </Layout>

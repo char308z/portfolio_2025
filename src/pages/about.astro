@@ -1,7 +1,48 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import GridWrapper from "../layouts/GridWrapper.astro";
 ---
 
-<Layout>
-  <h1>AbOuuuuuuT</h1>
-</Layout>
+<GridWrapper>
+  <div
+    class="h-screen w-full col-start-1 col-span-3 row-start-1 flex justify-center items-center bg-secondary"
+  >
+    <img src="../images/aboutMe.png" alt="" />
+  </div>
+  <div
+    class="h-screen w-full col-span-3 col-start-3 row-start-1 row-end-2 bg-bg p-11 flex flex-col gap-6 xl:gap-8"
+  >
+    <div class="flex h-full flex-col gap-2.5 justify-end">
+      <h1 class="text-primary font-medium text-3xl xl:text-4xl">
+        A little bit a about me
+      </h1>
+      <h2 class="text-black/75 text-md xl:text-xl font-hoe tracking-widest">
+        Min tag-line (ups) hook line eller what ever
+      </h2>
+    </div>
+    <div class="flex flex-col gap-6 h-full justify-end">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+        <br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <h3>Skills</h3>
+      <div>
+        <h3 class="inline">Fun fact:</h3><p class="inline">
+          something sooooo funny lol hahahah
+        </p>
+      </div>
+    </div>
+  </div>
+</GridWrapper>

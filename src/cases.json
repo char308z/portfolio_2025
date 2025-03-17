@@ -7,8 +7,9 @@
     "description": "",
     "folder": "twinPeaks",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
-    "color": "#e17d7f",
+    "bgColor": "#e17d7f",
     "textColor": "#921F1F",
+    "room":"room.svg",
     "gallery": [
       {
         "src": "room.svg",
@@ -32,7 +33,9 @@
     "description": "Redesign of the Danish libraries' national digital film service.",
     "folder": "filmstriben",
     "skills": ["skill1", "skill2", "skill3", "skill4", "skill4"],
-    "color": "oklch(70% 0.1159 360)",
+    "bgColor": "#fff",
+    "textColor": "#921F1F",
+    "room":"fullF.svg",
     "gallery": [
       {
         "src": "room.svg",
@@ -56,7 +59,9 @@
     "description": "",
     "folder": "slowmotion",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
-    "color": "oklch(70% 0.1159 360)",
+   "bgColor": "#B8C3FF",
+    "textColor": "#921F1F",
+    "room":"a.jpg",
     "gallery": [
       {
         "src": "a.jpg",
@@ -80,7 +85,9 @@
     "description": "Redesign of the Danish libraries' national digital film service",
     "folder": "piDag",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
-    "color": "oklch(70% 0.1159 360)",
+    "bgColor": "#e17d7f",
+    "textColor": "#921F1F",
+    "room":"a.jpg",
     "gallery": [
       {
         "src": "room.svg",
@@ -104,7 +111,9 @@
     "description": "Redesign of the Danish libraries' national digital film service",
     "folder": "figs",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
-    "color": "oklch(70% 0.1159 360)",
+    "bgColor": "#e17d7f",
+    "textColor": "#921F1F",
+    "room":"a.jpg",
     "gallery": [
       {
         "src": "room.svg",
@@ -128,7 +137,9 @@
     "description": "Redesign of the Danish libraries' national digital film service",
     "folder": "kaffeSysler",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
-    "color": "oklch(70% 0.1159 360)",
+    "bgColor": "#e17d7f",
+    "textColor": "#921F1F",
+    "room":"a.jpg",
     "gallery": [
       {
         "src": "room.svg",

@@ -86,17 +86,152 @@ import GridWrapper from "../layouts/GridWrapper.astro";
     </div>
   </div>
   <div
-    class="h-screen w-full col-start-3 col-span-3 row-start-1 flex justify-center items-center bg-secondary"
+    class="bouncingBox h-screen w-full col-start-3 col-span-3 row-start-1 flex justify-center items-center bg-secondary"
   >
     <svg
-      width="358"
-      height="750"
-      viewBox="0 0 358 750"
-      fill="none"
+      class="logo w-1/8"
+      fill="#432dd7"
       xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect y="180" width="358" height="570" fill="#B8C3FF"></rect>
-      <path d="M1 180H358L278.56 0H179.5H80.4403L1 180Z" fill="#432DD7"></path>
+      viewBox="0 0 90 135"
+      ><path
+        class="logoBounce"
+        d="M88.78,67.29c0,1.44-.83,2.4-1.19,2.4-.73,0-1-1-1.32-2.52-1.45-6.84-4.08-7.56-10.8-8.16-4.32-.36-17-.12-22.16-.12-.84,0-1.53,1.2-1.56,2.16-.3,8.48-.53,13.8-.36,28.52a22.85,22.85,0,0,0,8.67-2.52,19.62,19.62,0,0,0,8.76-8.91c1.55-3.45,1.93-4.24,2.89-4.21.6,0,.79,1.64.64,2.58-.18,2-.71,7.38-.89,9.13-.16,1.2-1.77,2.9-3.23,3.66a43.32,43.32,0,0,1-16.82,4.49c0,.85,0,1.83,0,3-.12,8.4-.42,16.83.24,25.2.48,6.12.84,6.84,7.43,7.92,1.57.24,2.76.84,2.76,1.56s-1.43,1.32-2.63,1.32c-2.28,0-7.44-.36-12.36-.36-4.68,0-11.28.36-13.32.36-1.68,0-2.52-.48-2.52-1.08s.72-1,2.16-1.44c6.48-1.32,7.08-2.64,7.8-7.8.51-3.88.67-17,.71-28.7-11.59-1-24.14-6.15-32-17.1C3.58,68.28.93,57,1.25,47.06,1.69,33.07,7,19.9,19.43,10.87a45.92,45.92,0,0,1,29-8.65A65.68,65.68,0,0,1,65.71,5.46,14.06,14.06,0,0,0,71.07,6.7c.6,0,1.27,1.53,1.13,2.06a137,137,0,0,0,0,13.74c.17,2.16-.46,3.22-1.18,3.19-.48,0-1-1.11-1.47-2.87-1.61-6.11-3.57-8.6-7-11.4-3.15-2.93-9.3-5.95-17.1-6.19-19.91-.63-31.56,15-32.26,37C13,52.41,14.42,59.46,16.64,65.32c5.75,14.68,16,21.77,25,23.78V87.81c0-7.08-.12-16-.36-21.36-.24-6.6-1-8.28-7.44-9-1.08-.12-2.4-.36-2.4-1.32s1.32-1.2,3.36-1.2c3.36,0,7.8.36,11.88.36H78.83c3.72,0,7.56-.72,8.52-.72a1.91,1.91,0,0,1,1.2,1.56C88.55,59.49,88.78,63.81,88.78,67.29Z"
+      ></path>
     </svg>
   </div>
 </GridWrapper>
+
+<script is:inline lang="ts">
+  // Add this script to your page
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the SVG element
+    const svg = document.querySelector(".logoBounce").parentElement;
+
+    // Get the container element
+    const container = svg.parentElement;
+
+    // Make sure the container has position relative (important for absolute positioning)
+    container.style.position = "relative";
+    container.style.overflow = "hidden"; // Prevent any overflow
+
+    // Animation settings
+    const speed = {
+      x: 1.5,
+      y: 1.5,
+    };
+
+    // Get container dimensions
+    const getContainerDimensions = () => {
+      return {
+        width: container.clientWidth,
+        height: container.clientHeight,
+      };
+    };
+
+    // Get SVG dimensions
+    const getSvgDimensions = () => {
+      const rect = svg.getBoundingClientRect();
+      return {
+        width: rect.width,
+        height: rect.height,
+      };
+    };
+
+    // Initialize position (start from a random position)
+    let dimensions = getContainerDimensions();
+    let svgSize = getSvgDimensions();
+
+    // Calculate radius for bounce detection
+    const radius = Math.max(svgSize.width, svgSize.height) / 2;
+
+    let position = {
+      x: radius + Math.random() * (dimensions.width - 2 * radius),
+      y: radius + Math.random() * (dimensions.height - 2 * radius),
+    };
+
+    // Apply initial position
+    svg.style.fill = "#432dd7";
+    svg.style.position = "absolute";
+    svg.style.left = position.x + "px";
+    svg.style.top = position.y + "px";
+    svg.style.transform = "translate(-50%, -50%)"; // Center the SVG at its position
+
+    // Initialize direction
+    let direction = {
+      x: speed.x,
+      y: speed.y,
+    };
+
+    // Generate random color
+    function getRandomColor() {
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      return `rgb(${r}, ${g}, ${b})`;
+    }
+
+    // Animation loop
+    function animate() {
+      // Update position
+      position.x += direction.x;
+      position.y += direction.y;
+
+      // Check boundaries - horizontal
+      if (position.x - radius <= 0 || position.x + radius >= dimensions.width) {
+        direction.x *= -1; // Reverse direction
+        // Change color when hitting the edge
+        document
+          .querySelector(".logoBounce")
+          .setAttribute("fill", getRandomColor());
+      }
+
+      // Check boundaries - vertical
+      if (
+        position.y - radius <= 0 ||
+        position.y + radius >= dimensions.height
+      ) {
+        direction.y *= -1; // Reverse direction
+        // Change color when hitting the edge
+        document
+          .querySelector(".logoBounce")
+          .setAttribute("fill", getRandomColor());
+      }
+
+      // Apply new position
+      svg.style.left = position.x + "px";
+      svg.style.top = position.y + "px";
+
+      // Continue animation
+      requestAnimationFrame(animate);
+    }
+
+    // Set initial color
+    document.querySelector(".logoBounce").setAttribute("fill", "#432dd7");
+
+    // Start animation
+    animate();
+
+    // Handle window resize
+    window.addEventListener("resize", function () {
+      // Update dimensions
+      dimensions = getContainerDimensions();
+      svgSize = getSvgDimensions();
+
+      // Update radius
+      const newRadius = Math.max(svgSize.width, svgSize.height) / 2;
+
+      // Ensure the SVG stays within bounds after resize
+      if (position.x - newRadius < 0) {
+        position.x = newRadius;
+      } else if (position.x + newRadius > dimensions.width) {
+        position.x = dimensions.width - newRadius;
+      }
+
+      if (position.y - newRadius < 0) {
+        position.y = newRadius;
+      } else if (position.y + newRadius > dimensions.height) {
+        position.y = dimensions.height - newRadius;
+      }
+    });
+  });
+</script>

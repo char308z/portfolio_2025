@@ -7,9 +7,11 @@
     "description": "",
     "folder": "twinPeaks",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
-    "bgColor": "#e17d7f",
+    "bgColor": "#EFE9D7",
     "textColor": "#921F1F",
-    "room":"room.svg",
+    "room":"fullF.svg",
+    "floorStyle":"fullFloor",
+    "room1": "",
     "gallery": [
       {
         "src": "room.svg",
@@ -34,8 +36,8 @@
     "description": "Redesign of the Danish libraries' national digital film service.",
     "folder": "filmstriben",
     "skills": ["skill1", "skill2", "skill3", "skill4", "skill4"],
-    "bgColor": "#52edf0",
-    "textColor": "#000",
+    "bgColor": "#E4D7B4",
+    "textColor": "#CAAE68",
     "room":"fullF.svg",
     "gallery": [
       {
@@ -61,11 +63,37 @@
     "folder": "slowmotion",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
    "bgColor": "#B8C3FF",
-    "textColor": "#921F1F",
+    "textColor": "#926B5C",
     "room":"fullF.svg",
     "gallery": [
       {
         "src": "a.jpg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }
+    ]
+  },
+  {
+    "slug": "rossetta",
+    "title": "Rossetta",
+    "subTitle": "Exam project in multimedia design",
+    "year": "2022",
+    "description": "Redesign of the roman style pizzaria at Østerbro",
+    "folder": "rossetta",
+    "skills": ["skill1", "skill2", "skill3", "skill4"],
+    "bgColor": "#83363D",
+    "textColor": "#B0C3A2",
+    "room":"fullF.svg",
+    "gallery": [
+      {
+        "src": "room.svg",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
@@ -86,8 +114,8 @@
     "description": "Redesign of the Danish libraries' national digital film service",
     "folder": "pi",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
-    "bgColor": "#e17d7f",
-    "textColor": "#921F1F",
+    "bgColor": "#F3F3F3",
+    "textColor": "#1D1D1D",
     "room":"fullF.svg",
     "gallery": [
       {
@@ -113,7 +141,7 @@
     "folder": "figs",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
     "bgColor": "#e17d7f",
-    "textColor": "#921F1F",
+    "textColor": "#583765",
     "room":"fullF.svg",
     "gallery": [
       {
@@ -138,8 +166,8 @@
     "description": "Redesign of the Danish libraries' national digital film service",
     "folder": "coffee",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
-    "bgColor": "#e17d7f",
-    "textColor": "#921F1F",
+    "bgColor": "#926B5C",
+    "textColor": "#472802",
     "room":"fullF.svg",
     "gallery": [
       {

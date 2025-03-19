@@ -1,15 +1,23 @@
 ---
-
+import cases from "../cases.json"; // Adjust path as needed
+const currentPath = Astro.url.pathname;
+const pageData = cases.find((item) => currentPath.includes(item.slug));
+const textColor = pageData?.textColor || "#000000"; // Default to black if not found
 ---
 
 <nav class="flex flex-col gap-4">
-  <a class="navPunkt text-primary font-medium text-lg 2xl:text-xl" href="/work"
-    >Work</a
-  >
-  <a class="navPunkt text-primary font-medium text-lg 2xl:text-xl" href="/about"
-    >About</a
+  <a
+    style={pageData ? `color: ${textColor};` : ""}
+    class="navPunkt text-primary font-medium text-lg 2xl:text-xl"
+    href="/work">Work</a
   >
   <a
+    style={pageData ? `color: ${textColor};` : ""}
+    class="navPunkt text-primary font-medium text-lg 2xl:text-xl"
+    href="/about">About</a
+  >
+  <a
+    style={pageData ? `color: ${textColor};` : ""}
     class="navPunkt text-primary font-medium text-lg 2xl:text-xl"
     href="/contact">Contact</a
   >
@@ -20,6 +28,9 @@
     opacity: 0.5;
     transition: opacity 0.3s ease;
   }
+  .navPunkt:hover {
+    opacity: 1;
+  }
 
   .navPunkt.active {
     opacity: 1;
@@ -27,15 +38,18 @@
 </style>
 
 <script is:inline lang="ts">
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", async () => {
     const navLinks = document.querySelectorAll("nav a");
     const currentPath = window.location.pathname;
 
+    // Hvis URL'en indeholder "/projects" eller er "index.html", gør alle links aktive
+    if (currentPath.includes("/projects/") || currentPath === "/") {
+      navLinks.forEach((link) => link.classList.add("active"));
+      return; // Stop yderligere behandling
+    }
+
     navLinks.forEach((link) => {
-      if (
-        link.getAttribute("href") === currentPath ||
-        (currentPath === "/" && link.getAttribute("href") === "/work")
-      ) {
+      if (link.getAttribute("href") === currentPath) {
         link.classList.add("active");
       } else {
         link.classList.remove("active");
@@ -43,34 +57,3 @@
     });
   });
 </script>
-
-<!-- <nav class="flex flex-col gap-4">
-  <a class=`navPunkt text-primary font-medium text-lg 2xl:text-xl` href="/work"
-    >Work</a
-  ><a
-    class=`navPunkt text-primary font-medium text-lg 2xl:text-xl`
-    href="/about">About</a
-  ><a
-    class=`navPunkt text-primary font-medium text-lg 2xl:text-xl`
-    href="/contact">Contact</a
-  >
-</nav>
-
-<script>
-  const navLinks = document.querySelectorAll("nav a");
-
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-
-    // `slice` here to remove the first `/` in pathname
-    const currentPath = window.location.pathname.slice("1");
-
-    // `link.href` returns a whole url, such as: "https://somedomain.com/posts" and we only need the last part
-    const hrefArray = link.href.split("/");
-    const thisPath = hrefArray[hrefArray.length - 1];
-
-    if (currentPath === thisPath) {
-      link.classList.add("active");
-    }
-  });
-</script> -->

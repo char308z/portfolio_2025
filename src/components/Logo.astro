@@ -1,5 +1,13 @@
+---
+import cases from "../cases.json"; // Adjust path as needed
+const currentPath = Astro.url.pathname;
+const pageData = cases.find((item) => currentPath.includes(item.slug));
+const logoColor = pageData?.textColor || "#000000"; // Default to black if not found
+---
+
 <svg
   id="logo"
+  style={pageData ? `fill: ${logoColor};` : ""}
   class="fill-primary max-w-10 min-w-6"
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 90 135"

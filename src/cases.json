@@ -27,14 +27,15 @@
   },
   {
     "slug": "filmstriben",
+    "link": "https://filmstriben.netlify.app/",
     "title": "Filmstriben",
     "subTitle": "Graduation project in multimedia design from KEA",
     "year": "2023",
     "description": "Redesign of the Danish libraries' national digital film service.",
     "folder": "filmstriben",
     "skills": ["skill1", "skill2", "skill3", "skill4", "skill4"],
-    "bgColor": "#fff",
-    "textColor": "#921F1F",
+    "bgColor": "#52edf0",
+    "textColor": "#000",
     "room":"fullF.svg",
     "gallery": [
       {
@@ -61,7 +62,7 @@
     "skills": ["skill1", "skill2", "skill3", "skill4"],
    "bgColor": "#B8C3FF",
     "textColor": "#921F1F",
-    "room":"a.jpg",
+    "room":"fullF.svg",
     "gallery": [
       {
         "src": "a.jpg",
@@ -83,11 +84,11 @@
     "subTitle": "Graduation project in multimedia design from KEA",
     "year": "2025",
     "description": "Redesign of the Danish libraries' national digital film service",
-    "folder": "piDag",
+    "folder": "pi",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
     "bgColor": "#e17d7f",
     "textColor": "#921F1F",
-    "room":"a.jpg",
+    "room":"fullF.svg",
     "gallery": [
       {
         "src": "room.svg",
@@ -113,7 +114,7 @@
     "skills": ["skill1", "skill2", "skill3", "skill4"],
     "bgColor": "#e17d7f",
     "textColor": "#921F1F",
-    "room":"a.jpg",
+    "room":"fullF.svg",
     "gallery": [
       {
         "src": "room.svg",
@@ -130,16 +131,16 @@
     ]
   },
   {
-    "slug": "a-study-of-coffe",
-    "title": "A study of coffe",
+    "slug": "a-study-of-coffee",
+    "title": "A study of coffee",
     "subTitle": "Graduation project in multimedia design from KEA",
     "year": "2020",
     "description": "Redesign of the Danish libraries' national digital film service",
-    "folder": "kaffeSysler",
+    "folder": "coffee",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
     "bgColor": "#e17d7f",
     "textColor": "#921F1F",
-    "room":"a.jpg",
+    "room":"fullF.svg",
     "gallery": [
       {
         "src": "room.svg",

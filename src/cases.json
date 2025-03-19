@@ -11,7 +11,8 @@
     "textColor": "#921F1F",
     "room":"fullF.svg",
     "floorStyle":"fullFloor",
-    "room1": "",
+    "room1": "fullF",
+    "room2":"fullF",
     "gallery": [
       {
         "src": "room.svg",
@@ -39,35 +40,12 @@
     "bgColor": "#E4D7B4",
     "textColor": "#CAAE68",
     "room":"fullF.svg",
+    "floorStyle":"stairsL",
+    "room1": "stairsL",
+    "room2":"roomR",
     "gallery": [
       {
         "src": "room.svg",
-        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
-      },
-      {
-        "src": "room.svg",
-        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
-      },
-      {
-        "src": "room.svg",
-        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
-      }
-    ]
-  },
-  {
-    "slug": "slowmotion",
-    "title": "Slowmotion",
-    "subTitle": "",
-    "year": "",
-    "description": "",
-    "folder": "slowmotion",
-    "skills": ["skill1", "skill2", "skill3", "skill4"],
-   "bgColor": "#B8C3FF",
-    "textColor": "#926B5C",
-    "room":"fullF.svg",
-    "gallery": [
-      {
-        "src": "a.jpg",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
@@ -90,10 +68,43 @@
     "skills": ["skill1", "skill2", "skill3", "skill4"],
     "bgColor": "#83363D",
     "textColor": "#B0C3A2",
-    "room":"fullF.svg",
+    "room":"fullF.svg", 
+    "floorStyle":"twoRooms",
+    "room1": "room505",
+    "room2":"room506",
     "gallery": [
       {
         "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "room.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }
+    ]
+  },
+  
+  {
+    "slug": "slowmotion",
+    "title": "Slowmotion",
+    "subTitle": "",
+    "year": "",
+    "description": "",
+    "folder": "slowmotion",
+    "skills": ["skill1", "skill2", "skill3", "skill4"],
+   "bgColor": "#B8C3FF",
+    "textColor": "#926B5C",
+    "room":"fullF.svg",
+    "floorStyle":"fullFloor",
+    "room1": "fullF",
+    "room2":"roomR",
+    "gallery": [
+      {
+        "src": "a.jpg",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
@@ -117,6 +128,9 @@
     "bgColor": "#F3F3F3",
     "textColor": "#1D1D1D",
     "room":"fullF.svg",
+    "floorStyle":"twoRooms",
+    "room1": "room505",
+    "room2":"room506",
     "gallery": [
       {
         "src": "room.svg",
@@ -132,6 +146,8 @@
       }
     ]
   },
+ 
+ 
   {
     "slug": "no-figs-given",
     "title": "No figs given",
@@ -143,6 +159,9 @@
     "bgColor": "#e17d7f",
     "textColor": "#583765",
     "room":"fullF.svg",
+    "floorStyle":"fullFloor",
+    "room1": "fullF",
+    "room2":"505",
     "gallery": [
       {
         "src": "room.svg",
@@ -158,6 +177,7 @@
       }
     ]
   },
+   
   {
     "slug": "a-study-of-coffee",
     "title": "A study of coffee",
@@ -169,6 +189,9 @@
     "bgColor": "#926B5C",
     "textColor": "#472802",
     "room":"fullF.svg",
+    "floorStyle":"fullFloor",
+    "room1": "fullF",
+    "room2":"roomR",
     "gallery": [
       {
         "src": "room.svg",

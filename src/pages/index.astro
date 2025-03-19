@@ -2,6 +2,8 @@
 import Floor from "../components/Floor.astro";
 
 import Layout from "../layouts/Layout.astro";
+
+import cases from "../cases.json";
 ---
 
 <Layout pageTitle="Charlotte Franciska | Portfolio">
@@ -17,12 +19,17 @@ import Layout from "../layouts/Layout.astro";
         id="floors"
         class="bg-indigo-100 px-2.5 lg:px-5 w-full grid gap-2.5 lg:gap-5 py-2.5 lg:py-5"
       >
-        <Floor floorStyle="stairsR" bg1="roomL" bg2="stairR" />
-        <Floor floorStyle="fullFloor" bg1="fullF" bg2="room2" />
-        <Floor floorStyle="twoRooms" bg1="room505" bg2="room506" />
-        <Floor floorStyle="stairsR" bg1="roomL" bg2="stairR" />
-        <Floor floorStyle="fullFloor" bg1="fullF" bg2="room2" />
-        <Floor floorStyle="stairsL" bg1="stairL" bg2="roomR" />
+        {
+          cases.map((project) => (
+            <Floor
+              floorStyle={project.floorStyle}
+              slug={project.slug}
+              room1={project.room1}
+              room2={project.room2}
+              folder={project.folder}
+            />
+          ))
+        }
       </section>
     </section>
   </div>

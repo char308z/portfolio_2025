@@ -5,12 +5,9 @@ import GridWrapper from "../layouts/GridWrapper.astro";
 ---
 
 <GridWrapper>
-  <div
-    id="casesTitles"
-    class="col-span-2 p-4 lg:p-11 flex flex-col justify-between gap-6"
-  >
+  <div id="casesTitles" class="col-span-2 p-4 lg:p-11 grid gap-6">
     <h1 class="font-hoe text-black/75 tracking-widest text-2xl">Projects</h1>
-    <ul class="grid gap-4.5 xl:gap-10">
+    <ul class="items-end h-[50vh] grid gap-4.5 xl:gap-10">
       {
         cases.map((project) => (
           <CaseLink

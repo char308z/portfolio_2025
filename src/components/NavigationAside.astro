@@ -2,7 +2,7 @@
 import cases from "../cases.json"; // Adjust path as needed
 const currentPath = Astro.url.pathname;
 const pageData = cases.find((item) => currentPath.includes(item.slug));
-const textColor = pageData?.textColor || "#000000"; // Default to black if not found
+const textColor = pageData?.textColor || "#1d1d1d"; // Default to black if not found
 ---
 
 <nav class="flex flex-col gap-4">

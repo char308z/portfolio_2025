@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
 import cases from "../cases.json";
 
 export async function getStaticPaths() {
@@ -19,7 +18,7 @@ const { myCase } = Astro.props;
   <main class="grid grid-cols-5">
     <div
       id="casesTitles"
-      class="col-span-2 p-4 xl:p-11 flex flex-col justify-end xl:gap-8"
+      class="col-span-2 p-4 xl:p-11 flex flex-col justify-end xl:gap-4.5"
     >
       <h1 class="font-medium text-4xl xl:text-5xl text-black">
         {myCase.title}
@@ -29,16 +28,16 @@ const { myCase } = Astro.props;
       >
         {myCase.subTitle}
       </h2>
-      <p class="max-w-prose text-pretty">{myCase.description}</p>
+      <p class="max-w-prose text-pretty">
+        {myCase.description}
+      </p>
       <div>
         <h3 class="font-semibold text-black">Acquired skills</h3>
-        <ul class="">
-          {
-            myCase.skills.map((skill) => (
-              <li class="list-inside list-disc">{skill}</li>
-            ))
-          }
-        </ul>
+        Lorem ipsum dolor sit amet <strong>Skill 1</strong> adipisicing elit. Ad,
+        dolores tenetur facere voluptas amet quis, quo aut <strong
+          >Skill 2</strong
+        >
+        officiis deserunt cumque. Non, <strong>Skill 3</strong> ipsum.
       </div>
       <a
         target="_blank"

@@ -2,9 +2,9 @@
   {
     "slug": "twin-peaks-the-game",
     "title": "Twin Peaks - The Game",
-    "subTitle": "",
-    "year": "",
-    "description": "",
+    "subTitle": "School project made with basic HTML, css and js",
+    "year": "2021",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa accusamus enim optio iste cupiditate maxime dicta? Delectus ab doloremque animi inventore, ipsam commodi suscipit! Animi consequatur voluptatum commodi maiores. Adipisci!",
     "folder": "twinPeaks",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
     "bgColor": "#EFE9D7",

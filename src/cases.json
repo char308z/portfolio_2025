@@ -15,15 +15,19 @@
     "room2":"fullF",
     "gallery": [
       {
-        "src": "room.svg",
+        "src": "twinpeaks.svg",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
-        "src": "room.svg",
+        "src": "twinpeaks1.jpg",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
-        "src": "room.svg",
+        "src": "twinpeaks2.jpg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "twinpeaks3.jpg",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       }
     ]
@@ -45,26 +49,34 @@
     "room2":"roomR",
     "gallery": [
       {
-        "src": "room.svg",
+        "src": "filmstriben.svg",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
-        "src": "room.svg",
+        "src": "filmstribenDesktop.png",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
-        "src": "room.svg",
+        "src": "filmstribenMobil.png",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "folderYdre.png",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "folderIndre.png",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       }
     ]
   },
   {
-    "slug": "rossetta",
-    "title": "Rossetta",
+    "slug": "rosetta",
+    "title": "Rosetta",
     "subTitle": "Exam project in multimedia design",
     "year": "2022",
     "description": "Redesign of the roman style pizzaria at Østerbro",
-    "folder": "rossetta",
+    "folder": "rosetta",
     "skills": ["skill1", "skill2", "skill3", "skill4"],
     "bgColor": "#83363D",
     "textColor": "#B0C3A2",
@@ -74,15 +86,35 @@
     "room2":"room506",
     "gallery": [
       {
-        "src": "room.svg",
+        "src": "rosettaDesktop.png",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
-        "src": "room.svg",
+        "src": "rosettaFolderBGPink.png",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
-        "src": "room.svg",
+        "src": "rosettaV1.jpg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "rosettaV2.jpg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }, {
+        "src": "rosettaV3.jpg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }, {
+        "src": "rosettaV4.jpg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }, {
+        "src": "rosettaV5.jpg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }, {
+        "src": "rosettaV6.jpg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "rosettaVindue.png",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       }
     ]
@@ -104,15 +136,16 @@
     "room2":"roomR",
     "gallery": [
       {
-        "src": "a.jpg",
+        "src": "Desktop.png",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
-        "src": "room.svg",
+        "src": "Styletile.svg",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
+     
       {
-        "src": "room.svg",
+        "src": "medlemskort.png",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       }
     ]
@@ -133,15 +166,15 @@
     "room2":"room506",
     "gallery": [
       {
-        "src": "room.svg",
+        "src": "pi.jpg",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
-        "src": "room.svg",
+        "src": "pi1.jpg",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
-        "src": "room.svg",
+        "src": "pi2.jpg",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       }
     ]
@@ -164,15 +197,19 @@
     "room2":"505",
     "gallery": [
       {
-        "src": "room.svg",
+        "src": "fig1.webp",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
-        "src": "room.svg",
+        "src": "plakatLodret.webp",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
-        "src": "room.svg",
+        "src": "figs.svg",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      },
+      {
+        "src": "fig3.webp",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       }
     ]
@@ -194,15 +231,21 @@
     "room2":"roomR",
     "gallery": [
       {
-        "src": "room.svg",
+        "src": "kaftryk1.png",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
       {
-        "src": "room.svg",
+        "src": "kaftryk2.png",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       },
+
       {
-        "src": "room.svg",
+        "src": "kaffedigt.png",
+        "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
+      }
+      ,
+      {
+        "src": "udstilling.jpg",
         "alt": "Picture of a svg vector drawing og the red room from Twin Peaks"
       }
     ]

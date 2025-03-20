@@ -43,7 +43,7 @@ const textColor = pageData?.textColor || "#000000"; // Default to black if not f
     const currentPath = window.location.pathname;
 
     // Hvis URL'en indeholder "/projects" eller er "index.html", gør alle links aktive
-    if (currentPath.includes("/projects/") || currentPath === "/") {
+    if (currentPath === "/") {
       navLinks.forEach((link) => link.classList.add("active"));
       return; // Stop yderligere behandling
     }

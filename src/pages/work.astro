@@ -5,9 +5,12 @@ import GridWrapper from "../layouts/GridWrapper.astro";
 ---
 
 <GridWrapper>
-  <div id="casesTitles" class="col-span-2 p-4 lg:p-11 grid gap-6">
+  <div
+    id="casesTitles"
+    class="col-span-2 p-4 h-screen lg:p-11 grid overflow-hidden content-between"
+  >
     <h1 class="font-hoe text-black/75 tracking-widest text-2xl">Projects</h1>
-    <ul class="items-end h-[50vh] grid gap-4.5 xl:gap-10">
+    <ul class="flex flex-col xl:justify-end gap-4.5 xl:gap-10">
       {
         cases.map((project) => (
           <CaseLink
@@ -26,7 +29,7 @@ import GridWrapper from "../layouts/GridWrapper.astro";
     class="col-span-3 w-full bg-[#FFE5E2] h-screen flex flex-col justify-center items-center"
   >
     <img
-      src="./images/a.jpg"
+      src="/images/a.jpg"
       alt=""
       class="w-3/4 aspect-18/9 object-cover"
       id="showcaseImage"
